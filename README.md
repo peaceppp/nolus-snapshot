@@ -1,26 +1,36 @@
-Stop service
+stop service node nolus
+
+```sudo systemctl stop nolusd
 
 ```
-sudo systemctl stop nolusd
-```
 
-reset data
+reset chain
 
 ```
-cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup
+
 ```
-```
+$HOME/.nolus/data/priv_validator_state.json 
+
+
+$HOME/.nolus/priv_validator_state.json.backup
+
+
 rm -rf $HOME/.nolus/data
+```
+
 ```
 
 Download Snapshot nolus
 
 ```
-curl -L https://snapshots.garznode.xyz/nolus-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
+curl -L https://snapshoots.nolus.kaelvnode.xyz/nolus/nolus-snapshot-20230302.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus mv
+
+
+$HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
 ```
 
 ```
-mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
+
 ```
 
 Restart service

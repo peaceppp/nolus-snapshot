@@ -5,17 +5,17 @@ stop service node nolus
 ```
 
 reset chain
-
+$HOME/.nolus/data/priv_validator_state.json
 ```
-
-```
-$HOME/.nolus/data/priv_validator_state.json 
-
-
 $HOME/.nolus/priv_validator_state.json.backup
-
-
+```
 rm -rf $HOME/.nolus/data
+```
+
+
+
+
+
 ```
 
 ```
